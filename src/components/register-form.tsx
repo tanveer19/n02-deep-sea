@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import Link from "next/link";
 import { registerPatient } from "@/services/auth/registerPatient";
 import { useActionState } from "react";
 import { Button } from "./ui/button";
@@ -104,9 +105,9 @@ const RegisterForm = () => {
 
             <FieldDescription className="px-6 text-center">
               Already have an account?{" "}
-              <a href="/login" className="text-blue-600 hover:underline">
+              <Link href="/login" className="text-blue-600 hover:underline">
                 Sign in
-              </a>
+              </Link>
             </FieldDescription>
           </Field>
         </FieldGroup>

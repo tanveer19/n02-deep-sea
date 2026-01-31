@@ -1,5 +1,30 @@
-const loginPage = () => {
-  return <div>Login</div>;
+import LoginForm from "@/components/login-form";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+const LoginPage = () => {
+  return (
+    <>
+      <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
+        <div className="w-full max-w-xl">
+          <Card>
+            <CardHeader>
+              <CardTitle>Sign in</CardTitle>
+              <CardDescription>Sign in to your account</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <LoginForm />
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </>
+  );
 };
 
-export default loginPage;
+export default LoginPage;
